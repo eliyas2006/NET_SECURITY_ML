@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 1150" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="950" height="1150" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Title Header -->
+  <text x="475" y="45" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="24" font-weight="800" fill="#f8fafc" text-anchor="middle" letter-spacing="-0.02em">AI-Driven Multi-Vendor Network Security Compliance Auditor</text>
+  <text x="475" y="70" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="500" fill="#94a3b8" text-anchor="middle">System Architecture &amp; Data Pipeline</text>
+
+  <!-- 1. User Layer -->
+  <g transform="translate(375, 100)" filter="url(#shadow)">
+    <rect width="200" height="55" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="2"/>
+    <text x="100" y="33" font-family="sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">👤 Security Engineer</text>
+  </g>
+
+  <!-- Arrow down -->
+  <path d="M 475 155 L 475 190" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+  <polygon points="475,195 470,185 480,185" fill="#38bdf8"/>
+
+  <!-- 2. Frontend Layer -->
+  <g transform="translate(300, 195)" filter="url(#shadow)">
+    <rect width="350" height="70" rx="8" fill="url(#cardGrad)" stroke="#06b6d4" stroke-width="2"/>
+    <text x="175" y="32" font-family="sans-serif" font-size="16" font-weight="700" fill="#38bdf8" text-anchor="middle">React 18 + Vite Web Dashboard</text>
+    <text x="175" y="52" font-family="sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Interactive Findings • Risk KPI Visuals • 1-Click Reports</text>
+  </g>
+
+  <!-- Arrow down -->
+  <line x1="475" y1="265" x2="475" y2="305" stroke="#38bdf8" stroke-width="2"/>
+  <polygon points="475,310 470,300 480,300" fill="#38bdf8"/>
+
+  <!-- 3. Backend REST API -->
+  <g transform="translate(250, 310)" filter="url(#shadow)">
+    <rect width="450" height="80" rx="8" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="2"/>
+    <text x="225" y="32" font-family="sans-serif" font-size="16" font-weight="700" fill="#60a5fa" text-anchor="middle">FastAPI Backend Orchestrator</text>
+    <text x="225" y="52" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">POST /api/audits/upload • GET /api/audits • /docs (OpenAPI)</text>
+    <text x="225" y="68" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Audit Service &amp; Pipeline Controller</text>
+  </g>
+
+  <!-- Arrow down -->
+  <line x1="475" y1="390" x2="475" y2="430" stroke="#38bdf8" stroke-width="2"/>
+  <polygon points="475,435 470,425 480,425" fill="#38bdf8"/>
+
+  <!-- 4. Vendor Detection & Parsers -->
+  <g transform="translate(150, 435)" filter="url(#shadow)">
+    <rect width="650" height="100" rx="8" fill="url(#cardGrad)" stroke="#64748b" stroke-width="1.5"/>
+    <text x="325" y="25" font-family="sans-serif" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="middle">Vendor Identification &amp; Syntax Parsers</text>
+    
+    <!-- Parser 1 -->
+    <rect x="25" y="40" width="180" height="45" rx="6" fill="#1e293b" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="115" y="68" font-family="sans-serif" font-size="13" font-weight="600" fill="#e2e8f0" text-anchor="middle">Cisco IOS Parser</text>
+    
+    <!-- Parser 2 -->
+    <rect x="235" y="40" width="180" height="45" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+    <text x="325" y="68" font-family="sans-serif" font-size="13" font-weight="600" fill="#e2e8f0" text-anchor="middle">Fortinet FortiOS Parser</text>
+
+    <!-- Parser 3 -->
+    <rect x="445" y="40" width="180" height="45" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+    <text x="535" y="68" font-family="sans-serif" font-size="13" font-weight="600" fill="#e2e8f0" text-anchor="middle">Palo Alto PAN-OS</text>
+  </g>
+
+  <!-- Arrow down -->
+  <line x1="475" y1="535" x2="475" y2="570" stroke="#38bdf8" stroke-width="2"/>
+  <polygon points="475,575 470,565 480,565" fill="#38bdf8"/>
+
+  <!-- 5. Common Schema Normalization & Feature Extractor -->
+  <g transform="translate(200, 575)" filter="url(#shadow)">
+    <rect width="550" height="60" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="2"/>
+    <text x="275" y="27" font-family="sans-serif" font-size="15" font-weight="700" fill="#38bdf8" text-anchor="middle">Vendor-Neutral Security Normalizer</text>
+    <text x="275" y="47" font-family="sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Common Security Schema • 32 Extracted Numerical Features</text>
+  </g>
+
+  <!-- Split Branch into Compliance & ML -->
+  <path d="M 475 635 L 475 660 L 275 660 L 275 690" stroke="#38bdf8" stroke-width="2" fill="none"/>
+  <polygon points="275,695 270,685 280,685" fill="#38bdf8"/>
+
+  <path d="M 475 635 L 475 660 L 675 660 L 675 690" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+  <polygon points="675,695 670,685 680,685" fill="#8b5cf6"/>
+
+  <!-- 6A. Deterministic Rule Engine -->
+  <g transform="translate(100, 695)" filter="url(#shadow)">
+    <rect width="350" height="120" rx="8" fill="url(#cardGrad)" stroke="#10b981" stroke-width="2"/>
+    <text x="175" y="28" font-family="sans-serif" font-size="15" font-weight="700" fill="#34d399" text-anchor="middle">Deterministic Rule Engine</text>
+    <text x="175" y="48" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">16 CIS Benchmark &amp; NIST SP 800-53 Controls</text>
+    <text x="175" y="68" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">• Status: PASS, WARN, FAIL</text>
+    <text x="175" y="85" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">• Exact Line Evidence &amp; Remediation CLI</text>
+    <text x="175" y="102" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">• Severity Penalties: Critical(25), High(15), Med(7)</text>
+  </g>
+
+  <!-- 6B. ML Risk & Anomaly Engine -->
+  <g transform="translate(500, 695)" filter="url(#shadow)">
+    <rect width="350" height="120" rx="8" fill="url(#cardGrad)" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="175" y="28" font-family="sans-serif" font-size="15" font-weight="700" fill="#a78bfa" text-anchor="middle">Machine Learning Risk Engine</text>
+    <text x="175" y="48" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Loaded Model: Random Forest (100 Trees)</text>
+    <text x="175" y="68" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">• Multi-Class Risk Probs: Low, Med, High, Crit</text>
+    <text x="175" y="85" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">• Isolation Forest Outlier/Anomaly Score</text>
+    <text x="175" y="102" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">• Factor Explainability (MDI Gini Importances)</text>
+  </g>
+
+  <!-- Merge Branches into Risk Engine -->
+  <path d="M 275 815 L 275 850 L 475 850 L 475 870" stroke="#10b981" stroke-width="2" fill="none"/>
+  <path d="M 675 815 L 675 850 L 475 850 L 475 870" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+  <polygon points="475,875 470,865 480,865" fill="#38bdf8"/>
+
+  <!-- 7. Transparent Risk Aggregation -->
+  <g transform="translate(200, 875)" filter="url(#shadow)">
+    <rect width="550" height="80" rx="8" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="2"/>
+    <text x="275" y="28" font-family="sans-serif" font-size="15" font-weight="700" fill="#fbbf24" text-anchor="middle">Transparent Risk Aggregation Layer</text>
+    <text x="275" y="48" font-family="monospace" font-size="12" fill="#38bdf8" text-anchor="middle">Score = [0.55 * RuleScore + 0.45 * MLScore + AnomalyPenalty]</text>
+    <text x="275" y="68" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Enforces Safety Floor: >=1 Critical Rule Violations Floors Risk to HIGH/CRITICAL</text>
+  </g>
+
+  <!-- Arrow down -->
+  <line x1="475" y1="955" x2="475" y2="990" stroke="#38bdf8" stroke-width="2"/>
+  <polygon points="475,995 470,985 480,985" fill="#38bdf8"/>
+
+  <!-- 8. Database & Reports Layer -->
+  <g transform="translate(180, 995)" filter="url(#shadow)">
+    <rect width="280" height="85" rx="8" fill="url(#cardGrad)" stroke="#64748b" stroke-width="1.5"/>
+    <text x="140" y="30" font-family="sans-serif" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="middle">Database Layer</text>
+    <text x="140" y="50" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">SQLite / PostgreSQL (SQLAlchemy)</text>
+    <text x="140" y="68" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Audits • Findings • Risk Lineage</text>
+  </g>
+
+  <g transform="translate(490, 995)" filter="url(#shadow)">
+    <rect width="280" height="85" rx="8" fill="url(#cardGrad)" stroke="#64748b" stroke-width="1.5"/>
+    <text x="140" y="30" font-family="sans-serif" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="middle">Report Generator</text>
+    <text x="140" y="50" font-family="sans-serif" font-size="12" fill="#cbd5e1" text-anchor="middle">Standalone HTML / Printable View</text>
+    <text x="140" y="68" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Executive Summary • Evidence • CLI</text>
+  </g>
+
+</svg>

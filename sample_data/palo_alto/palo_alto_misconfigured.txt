@@ -1,0 +1,7 @@
+# Synthetic / demonstration configuration - Palo Alto PAN-OS Misconfigured
+set deviceconfig system hostname pa-perimeter-risky
+set deviceconfig system service disable-telnet no
+set deviceconfig system service disable-http no
+set deviceconfig system snmp-setting version v2c community public
+set deviceconfig system session idle-timeout 0
+set rulebase security rules "Inbound-Allow-Any" from untrust to trust source any destination any service any action allow log-end no

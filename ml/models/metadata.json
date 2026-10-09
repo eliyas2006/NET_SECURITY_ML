@@ -1,0 +1,238 @@
+{
+  "model_type": "Random Forest",
+  "classes": [
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "CRITICAL"
+  ],
+  "feature_names": [
+    "ssh_version",
+    "ssh_enabled",
+    "telnet_enabled",
+    "http_server_enabled",
+    "https_server_enabled",
+    "password_encryption_enabled",
+    "weak_password_algorithms_count",
+    "strong_password_algorithms_count",
+    "min_password_length",
+    "aaa_new_model_enabled",
+    "logging_enabled",
+    "remote_syslog_count",
+    "logging_buffered_level",
+    "ntp_servers_count",
+    "ntp_authenticated",
+    "snmp_v1_v2c_enabled",
+    "snmp_default_community_used",
+    "snmp_v3_enabled",
+    "insecure_services_count",
+    "login_banner_configured",
+    "exec_timeout_minutes",
+    "firewall_rules_total",
+    "unrestricted_rules_count",
+    "default_deny_enforced",
+    "exposed_management_interfaces",
+    "vpn_crypto_modern",
+    "vendor_cisco",
+    "vendor_fortinet",
+    "vendor_paloalto"
+  ],
+  "n_features": 29,
+  "trained_timestamp": "2026-10-09T08:58:48.963723",
+  "candidate_comparison": {
+    "Logistic Regression": {
+      "cv_mean_acc": 0.9452380952380952,
+      "cv_std_acc": 0.025365804467455365,
+      "val_acc": 0.95,
+      "test_acc": 0.95,
+      "test_precision_macro": 0.9418695391182552,
+      "test_recall_macro": 0.9226312551271534,
+      "test_f1_macro": 0.9304181364840551,
+      "test_f1_weighted": 0.9484022002792456,
+      "crit_to_low": 0,
+      "high_to_low": 0,
+      "confusion_matrix": [
+        [
+          57,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          45,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          18,
+          4
+        ],
+        [
+          0,
+          0,
+          2,
+          51
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "cv_mean_acc": 0.9392857142857144,
+      "cv_std_acc": 0.029257632684391646,
+      "val_acc": 0.95,
+      "test_acc": 0.9277777777777778,
+      "test_precision_macro": 0.9056091577187115,
+      "test_recall_macro": 0.9026587438654059,
+      "test_f1_macro": 0.9039220391404041,
+      "test_f1_weighted": 0.9274681976809637,
+      "crit_to_low": 0,
+      "high_to_low": 0,
+      "confusion_matrix": [
+        [
+          56,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          43,
+          2,
+          0
+        ],
+        [
+          0,
+          4,
+          18,
+          2
+        ],
+        [
+          0,
+          0,
+          3,
+          50
+        ]
+      ]
+    },
+    "Random Forest": {
+      "cv_mean_acc": 0.9392857142857143,
+      "cv_std_acc": 0.024513405097588103,
+      "val_acc": 0.9555555555555556,
+      "test_acc": 0.9611111111111111,
+      "test_precision_macro": 0.9456896551724139,
+      "test_recall_macro": 0.9648277276456112,
+      "test_f1_macro": 0.9518174213179817,
+      "test_f1_weighted": 0.9622704888284359,
+      "crit_to_low": 0,
+      "high_to_low": 0,
+      "confusion_matrix": [
+        [
+          57,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          43,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          24,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          49
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "cv_mean_acc": 0.9416666666666668,
+      "cv_std_acc": 0.01214052265141138,
+      "val_acc": 0.9555555555555556,
+      "test_acc": 0.95,
+      "test_precision_macro": 0.9376139303628838,
+      "test_recall_macro": 0.9336438409395104,
+      "test_f1_macro": 0.9355051700553231,
+      "test_f1_weighted": 0.9497356313073541,
+      "crit_to_low": 0,
+      "high_to_low": 0,
+      "confusion_matrix": [
+        [
+          56,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          44,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          20,
+          2
+        ],
+        [
+          0,
+          0,
+          2,
+          51
+        ]
+      ]
+    }
+  },
+  "top_feature_importances": [
+    [
+      "min_password_length",
+      0.12655109774864207
+    ],
+    [
+      "unrestricted_rules_count",
+      0.12300489530557203
+    ],
+    [
+      "exec_timeout_minutes",
+      0.11317009586536246
+    ],
+    [
+      "firewall_rules_total",
+      0.08072694167963564
+    ],
+    [
+      "snmp_default_community_used",
+      0.06876656678764129
+    ],
+    [
+      "remote_syslog_count",
+      0.06676851638770286
+    ],
+    [
+      "http_server_enabled",
+      0.06432261608520379
+    ],
+    [
+      "telnet_enabled",
+      0.04805366804424418
+    ],
+    [
+      "logging_enabled",
+      0.04250107764016633
+    ],
+    [
+      "snmp_v1_v2c_enabled",
+      0.03618245688735009
+    ]
+  ]
+}

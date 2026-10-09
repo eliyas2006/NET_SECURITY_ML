@@ -1,0 +1,14 @@
+# Synthetic / demonstration configuration - Palo Alto PAN-OS Secure Gateway
+set deviceconfig system hostname pa-edge-fw01
+set deviceconfig system ip-address 198.51.100.20 netmask 255.255.255.248
+set deviceconfig system default-gateway 198.51.100.17
+set deviceconfig system dns-setting servers primary 1.1.1.1
+set deviceconfig system ntp-servers primary-ntp-server ntp-server-address 10.100.10.1
+set deviceconfig system service disable-telnet yes
+set deviceconfig system service disable-http yes
+set deviceconfig system login-banner "Authorized Access Only - All Sessions Recorded"
+set deviceconfig system session idle-timeout 10
+set shared log-settings syslog "Corp-SIEM" server 10.100.50.10
+set shared admin-password-profile "Enforced-Complexity" min-password-length 14
+set rulebase security rules "Outbound-Corporate" from trust to untrust source [ 10.100.0.0/16 ] destination any service [ service-http service-https ] action allow log-end yes
+set rulebase security rules "Default-Drop-Audit" from any to any source any destination any service any action deny log-end yes
